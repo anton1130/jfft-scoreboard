@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>JFFT Scoreboard Overlay</title>
+    <style>
+        /* OBS 背景通常透明，這裡設定基礎樣式 */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: "Microsoft JhengHei", Arial, sans-serif;
+            background-color: transparent; /* 重要：讓 OBS 背景透明 */
+        }
+
+        /* 計分板容器 */
+        #scoreboard {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 1920px;
+            height: 250px;
+            background-color: rgba(242, 30, 165, 0.6); /* 對應 Python 的 current_opacity */
+            border-radius: 0px;
+            margin: 50px auto;
+        }
+
+        /* 單個計分區 */
+        .score-box {
+            text-align: center;
+            flex: 1;
+        }
+
+        .name-label {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .score-value {
+            font-size: 80px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="scoreboard">
+        <div class="score-box"><div class="name-label"> </div><div id="score-0" class="score-value">0</div></div>
+        <div class="score-box"><div class="name-label"> </div><div id="score-1" class="score-value">0</div></div>
+        <div class="score-box"><div class="name-label"> </div><div id="score-2" class="score-value">0</div></div>
+        <div class="score-box"><div class="name-label"> </div><div id="score-3" class="score-value">0</div></div>
+        <div class="score-box"><div class="name-label"> </div><div id="score-4" class="score-value">0</div></div>
+        <div class="score-box"><div class="name-label"> </div><div id="score-5" class="score-value">0</div></div>
+    </div>
+
+    <script>
+        const SPREADSHEET_ID = '1cY903H9XhtNHJRatKNGg_0JHOuYlp8sE5v8ISrtZm6c';
+        const API_KEY = 'AIzaSyBXfuaFSK5G_ev7z6JuV86bHeww7p72w5g'; // 你需要申請一個 API Key
+        const RANGE = 'FINAL 第六屆JFFT智力王大賽!I3:N3';
+
+        async function updateScores() {
+            try {
+                const url = `https://sheets.googleapis.com/v4/spreadsheets/${1cY903H9XhtNHJRatKNGg_0JHOuYlp8sE5v8ISrtZm6c}/values/${FINAL 第六屆JFFT智力王大賽!I3:N3}?key=${IzaSyBXfuaFSK5G_ev7z6JuV86bHeww7p72w5g}`;
+                const response = await fetch(url);
+                const data = await response.json();
+
+                if (data.values && data.values[0]) {
+                    const scores = data.values[0];
+                    scores.forEach((score, index) => {
+                        const scoreElement = document.getElementById(`score-${index}`);
+                        if (scoreElement && scoreElement.innerText !== score) {
+                            scoreElement.innerText = score;
+                        }
+                    });
+                }
+            } catch (error) {
+                console.error('更新分數失敗:', error);
+            }
+        }
+
+        // 每 2 秒更新一次 (OBS 建議不要更新太頻繁，避免被 Google 封鎖 IP)
+        setInterval(updateScores, 2000);
+        updateScores(); // 初始執行
+    </script>
+</body>
+</html>
