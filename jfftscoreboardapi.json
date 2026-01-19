@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "jfftscoreboardapi",
+  "private_key_id": "77145fb18b683b9efb660d443d683f8694d2568f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCuIjmlSwmn0Rdd\nGyRaVzYOYL92bhfxaFapO25eOrh7QBZk/0SZrUMF2IxS6EIDbRtZVhsbjc9g0cAs\nrUAbcwZmMrz76BSdPHFSlM+3EY6L2BiAGtxGjTYN/e9yTDMp6DqIgueS0Q5ujMAe\nZvWvODOdMKWxLgaQwZxQJv2wBjI+7pZ8BXaQPnWKUje/LjKKN5slbbsiP5fwX9n6\ngAYositD+kDwD8jooxHC6nz0gTh8Iy2+6jz249iVtLNuyRA4iNXPeogWE0oZNdQh\nMgAZp/IdPreJrq7KMesFQ5AZ2s7d/YtYVxGaoLT4YFchX/ZxNbxqvGwP+YcyU/CN\nyJXkB7/nAgMBAAECggEAQAW+WwsJPEWwiN9jUMHS0pt4mZLlw7DAeA0tSYDedhY8\nhZqi/ruIslwJT6wsJTVWwlRZuBo9/lNwDB0QvmbemfGasSWFesAPzDSBYEYYukrT\nyznU9i2SC7fq8wOYJhbHeoxilwS9ASFHu4XQW8FWnLsXmFqbOFqu3XtQd4j3rVIR\nA32IdxzU2K/ba5ar3gj3e1itiJqqGgkYdL/7muEu1xg/GRrZndHd4A05W4O4U4vq\n6Xw6h+laCLnlKWegLcfHeKIvry/EHa9Bv76VdPAjsIkSji1A67fdwptadLj26ZQg\nOtmApSWLEvxwNyiJr9nS4PeRODTWvkpPugB1jKr8XQKBgQDW2mO3G3WViysB0SAB\nLcUz5ylEBZCRbQqXBg//ecH03/39MCjZIF/w7qPwX2gTcLaOCz4a8Ms1rejV2Rz/\ntMvbev6BHeSXzhmoHJ1Qj6hsESqdR1PCjPFClCT+DBhQRU+tDfF1v0oZcISEZ5dY\n91YBPdncSbehZhfVnW58JPCQywKBgQDPe3wFaTNwJJYG+H4wt1XCf4Pz3a8sB+sE\nicZRpogIXN27wPGfV9yVuZSr15cTyaw0uHfCglFfBSREWegpFaH9PfWHma3Rw2wH\n59Ph+8H9uUkBeaQmf5fxYOvcEViogPyDGK7TrP4iyhy8bJF107gQA2hwBUJp2NL4\nrVz6r0f11QKBgQCQkzxuRqgFDTTPcC2dHXOJzY9TGnuBoGJz5bx2KTR+1wtOiE20\nbbiho7PlWA3spvfw9VfBQS88293FqOd+meZjtovzzm24SROysC6bu0+WCKcoVori\na30dVBrgaLsjqMBIrw1AMoxmOfSyNBL/5s+U3k3vkhtjHBQFxn5GQ4UtqQKBgQDK\npEhU4JKkjJca58gXvHe+JtyxaWqVDoazP/y58nQZ9tl5btCOWDnQ4hgaXc3oPag7\nNY+CIdVngJYTS9w7hC1aMRGFBsuFe+AfOITwyfqF3Fk5X5y7HRNBZO/3V9nHeXMm\ndw0JIIR1ZgD65u6KreWvfiSahAiBaItk5a1SCa+2oQKBgHOnu5YFpPjx+QbApAVG\nlm7EQ9nbYlTIGfBMCj0LsGIAQniiySrTOVYudnxCF9MViwJ8CqMgHuAOhynEOUI7\npp+fTqN64E4NQ6aGXN/Ga1K7Y/P6ySBBmmP8Vs2qDILYRsmmTqLYAWULE8EE/unZ\nDWQ+MZ3CLj5wTDpfSKXVmWR6\n-----END PRIVATE KEY-----\n",
+  "client_email": "jfftscoreboardapi@jfftscoreboardapi.iam.gserviceaccount.com",
+  "client_id": "100249824244053976632",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/jfftscoreboardapi%40jfftscoreboardapi.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
